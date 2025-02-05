@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-import { AppBar, Box, Button, Container, FormControl, InputLabel, MenuItem, Select, Skeleton, Toolbar } from "@mui/material";
+import { AppBar, Box, Button, Container, Skeleton, Toolbar } from "@mui/material";
 import Image from "next/image";
 import LanguageSelect from "./languageSelect";
 

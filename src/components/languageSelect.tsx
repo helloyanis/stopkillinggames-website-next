@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import { Box, FormControl, MenuItem, Select } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 export default function LanguageSelect() {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     return (
         <Box sx={{ minWidth: 120 }}>
         <FormControl fullWidth>
