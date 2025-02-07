@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import './i18n';
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
-import AnalyticsAlert from "@/components/analyticsAlert";
 
 export const metadata: Metadata = {
   title: "Stop Killing Games",
@@ -33,16 +31,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const gpcHeader = (await headers()).get('sec-gpc');
-  const shouldLoadAnalytics = gpcHeader !== '1';
   
   return (
     <html lang="en">
       <body className="antialiased">
         <Navbar />
         {children}
-        {shouldLoadAnalytics && <Analytics />}
-        <AnalyticsAlert shouldLoadAnalytics={shouldLoadAnalytics} />
       </body>
     </html>
   );
