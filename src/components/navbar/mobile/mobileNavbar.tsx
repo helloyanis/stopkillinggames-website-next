@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { NavbarProps } from "../interfaces";
-import { Box, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
+import { Box, Container, IconButton, Menu, Toolbar } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from "next/link";
 import LanguageSelect from "../languageSelect";
