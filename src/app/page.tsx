@@ -1,8 +1,10 @@
 "use client"
 export default function Home() {
+
   return (
-    <h1>
+    <div className="w-100 min-h-screen py-2">
       Hello world
-    </h1>
+
+    </div>
   );
 }
